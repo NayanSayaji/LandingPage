@@ -7,6 +7,19 @@
      font-family: 'Poppins', sans-serif;
  }
 
+ html {
+     font-size: 62.5%;
+ }
+
+ .line {
+     margin: 2%;
+     background-color: rgb(0, 0, 0);
+     height: 3px;
+     width: 60%;
+     margin-left: 20%;
+     margin-right: 20%;
+ }
+
  body {
      overflow-x: hidden;
  }
@@ -26,11 +39,11 @@
      padding: 0% 6%;
      justify-content: space-between;
      align-items: center;
-     background-image: linear-gradient(rgba(80, 77, 77, 0.1), rgba(0, 0, 0, 0.5));
+     background-color: #1c1c1d;
  }
 
  nav div {
-     font-size: 35px;
+     font-size: 3rem;
      color: #fff;
  }
 
@@ -49,13 +62,14 @@
      list-style: none;
      display: inline-block;
      padding: 5px 12px;
+     font-weight: bold;
      position: relative;
  }
 
  .nav-links ul li a {
      color: #fff;
      text-decoration: none;
-     font-size: 15px;
+     font-size: 1.5rem;
  }
 
  .nav-links ul li::after {
@@ -86,13 +100,9 @@
      text-align: center;
  }
 
- .text-box h1 {
-     font-size: 62px;
- }
-
  .text-box p {
      margin: 10px 0 40px;
-     font-size: larger;
+     font-size: 2.5rem;
      color: #fff;
  }
 
@@ -102,7 +112,7 @@
      color: #fff;
      border: 1px solid #fff;
      padding: 10px 20px;
-     font-size: 13px;
+     font-size: 1.3rem;
      background: transparent;
      position: relative;
      cursor: pointer;
@@ -126,7 +136,7 @@
  #about {
      width: 100vw;
      height: 100vh;
-     background-image: linear-gradient(rgba(165, 159, 159, 0.705), rgb(255, 255, 255, 0.5)), url(img/aboutbg.jpg);
+     background-color: #fff;
      background-position: bottom;
      background-size: cover;
      display: flex;
@@ -140,8 +150,8 @@
 
  .logo {
 
-     text-align: left;
-     font-size: 50px;
+     text-align: center;
+     font-size: 5rem;
      margin-bottom: 20px;
      margin-left: 20px;
  }
@@ -149,14 +159,14 @@
  .logo img {
      padding: 5px 5px 0px 0px;
      width: 40px;
-     mix-blend-mode: lighten;
+     mix-blend-mode: darken;
  }
 
 
 
  #about div h1 {
      margin-left: 20px;
-     font-size: 25px;
+     font-size: 2.5rem;
      margin-bottom: 10px;
      text-align: left;
      color: rgb(0, 0, 0);
@@ -166,7 +176,7 @@
  #about div p {
      margin-left: 20px;
      text-align: left;
-     font-size: 20px;
+     font-size: 2rem;
      color: #201616;
      font-weight: bold;
      letter-spacing: 1px;
@@ -182,10 +192,9 @@
      margin: auto;
      text-align: center;
      padding-top: 50px;
-     background-image: linear-gradient(rgb(255, 255, 255, 0.5), rgba(165, 159, 159, 0.705)), url(img/aboutbg.jpg);
      background-size: cover;
      justify-content: left;
-     
+
 
  }
 
@@ -193,13 +202,13 @@
      margin-left: 20px;
      margin-top: 20px;
      text-align: left;
-     font-size: 36px;
+     font-size: 3.6rem;
      font-weight: 600;
  }
 
  .servicesss p {
      color: grey;
-     font-size: 14px;
+     font-size: 1.4rem;
      font-weight: 400;
      line-height: 22px;
      padding: 10px;
@@ -244,7 +253,6 @@
      height: 100vh;
      text-align: center;
      padding-top: 50px;
-     background-image: linear-gradient(rgba(165, 159, 159, 0.705), rgb(255, 255, 255, 0.5)), url(img/aboutbg.jpg);
      background-size: cover;
      justify-content: left;
  }
@@ -296,74 +304,292 @@
      color: rgb(255, 255, 255);
      width: 100%;
      text-align: center;
+     font-size: 1.5rem;
 
  }
 
  .footer h1 {
-     margin-top: 100px;
+     margin-top: 5%;
      margin-bottom: 25px;
      color: rgb(255, 255, 255);
      /* margin-top: 20px; */
-     font-size: 50px;
+     font-size: 5rem;
      font-weight: 800;
      text-align: center;
  }
 
  .icons .fa {
-     width: 100%;
-     margin-bottom: 0%;
-     align-items: center;
-     color: #e02316;
+
+     color: #ffffff;
      font-weight: 700;
-     font-size: 25px;
+     left: 0;
+     font-size: 3rem;
      text-shadow: 2px 2px #b4abab8f;
      margin: 0 13px;
      cursor: pointer;
-     padding: 18px 50%;
- }
- .icons .fa:hover{
-    font-size: 30px;
+    margin: auto;
+     padding: 1% 50%;
  }
 
- .fa-heart-o {
-     color: #f44336;
+.footer > h2{
+    margin-top: 3%;
+    font-size: 2rem;
+    text-decoration: wavy;
+    color: white;
+    text-align: center;
+}
 
+ .icons .fa:hover {
+     transform: scale(1.01);
+     transition: 1s;
+ }
+
+.gotoform{
+    float: right;
+    margin-right: 5%;
+    text-decoration: none;
+    color: white;
+    border:  2px double white;
+    border-radius: 35%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1%;
+}
+.gotoform:hover{
+    box-shadow: 10px 20px 100px 0 rgb(236, 234, 234);
+    background-color: #29201f;
+}
+
+
+ /* Contact Section */
+ .contact {
+     padding: 2.5vh;
+ }
+
+ .contact h2 {
+     color: rgb(0, 0, 0);
+     margin-bottom: 2.5vh;
+     text-align: center;
+     font-size: 2rem;
+ }
+
+
+ .contact .contact-form {
+     background-color: rgb(247, 241, 247);
+     color: black;
+     padding: 1rem;
+     box-shadow: 10px 20px 100px 0 black;
+     width: 80%;
+     margin: auto;
+     border: px solid beige;
+     border-bottom: 1px solid #1c1c1d;
+     border-right: 1px solid #1c1c1d;
+     border-bottom-right-radius: 2rem;
+ }
+
+
+ .contact p {
+     padding: 0.75rem;
+ }
+
+ .contact label {
+     display: block;
+     margin-bottom: 0.5rem;
+     font-size: 1.5rem;
+
+ }
+
+ .contact input,
+ .contact textarea,
+ .contact button {
+     width: 100%;
+     border: 1px solid black;
+ }
+
+ .contact input,
+ .contact textarea {
+     background-color: transparent;
+     border: 2px solid transparent;
+     border-bottom: 2px solid rgb(41, 29, 29);
+     color: rgb(12, 11, 11);
+     outline: none;
+     padding: 0.5rem;
+ }
+
+ .contact input:focus,
+ .contact textarea:focus {
+     background-color: rgb(255, 255, 255);
+     border-radius: 2rem;
+     color: rgb(0, 0, 0);
+ }
+
+ .contact button {
+     background-color: rgb(255, 255, 255);
+     border: 2px rgb(0, 0, 0) solid;
+     color: rgb(3, 3, 3);
+     border-radius: 12px;
+     cursor: pointer;
+     padding: 0.5rem;
+     font-weight: bold;
+ }
+
+ .btnsend {
+     font-size: 2rem;
+     width: 30%;
+     margin: auto;
+ }
+
+ .contact button:hover {
+     background-color: rgb(255, 255, 255);
+     border: 2px rgb(99, 95, 95) solid;
+     color: rgb(3, 3, 3);
+     transform: scale(1.02);
+     transition: color 1s ease-in-out, background-color 1s ease-in-out;
  }
 
 
 
- @media(max-width:700px) {
-     .text-box h1 {
-         font-size: 20px;
-     }
-
-     .nav-links ul li {
-         display: block;
-     }
-
-     .nav-links {
-         position: absolute;
-         background: #fc1101;
-         height: 100vh;
-         width: 200px;
-         top: 0;
-         right: 0;
-         text-align: left;
-         z-index: 2;
-         transition: 1s;
-     }
-
-     .nav-links ul {
-         font-weight: 500;
-         padding: 30px;
-     }
-
-     nav .fa {
-         display: block;
-         color: #f10f0f;
-         margin: 10px;
-         font-size: 20px;
-         cursor: pointer;
-     }
-
+ .contact .contact-info {
+     background-color: blue;
+     color: grey;
+     grid-column: 1 / span 5;
+     padding: 1rem;
  }
+
+ .contact .contact-info h3 {
+     text-align: center;
+ }
+
+ .contact .contact-info p {
+     margin-top: 1rem;
+ }
+
+ .contact .contact-info li {
+     margin-top: 1rem;
+ }
+
+ /* MQ TABLET & PC */
+
+ @media (min-width: 700px) {
+     .contact {
+         padding: 15vh;
+     }
+
+     .contact h2 {
+         margin-bottom: 5vh;
+     }
+
+     .contact .contact-form {
+         grid-column: 1 / 4;
+     }
+
+     .contact .contact-info {
+         grid-column: 4 / 6;
+     }
+
+     .contact .contact-info p {
+         font-size: 0.8rem;
+         margin-top: 1rem;
+     }
+
+     .contact .contact-info li {
+         font-size: 0.8rem;
+         margin-top: 1rem;
+     }
+ }
+
+ /* MQ PC */
+
+ @media (min-width: 993px) {
+
+     .contact p,
+     .contact input,
+     .contact textarea,
+     .contact button {
+         font-size: 1.125rem;
+     }
+
+     .contact .contact-info p {
+         font-size: 1.125rem;
+     }
+
+     .contact .contact-info li {
+         font-size: 1.125rem;
+     }
+ }
+
+ @media (min-width: 1280px) {
+     .contact {
+         margin: 0 auto;
+         width: 1280px;
+     }
+ }
+
+
+
+ /* Foooter */
+ footer {
+    background-color: rgb(46, 44, 44);
+    color: rgb(255, 255, 255);
+    padding-top: 40px;
+}
+
+footer div{
+    left: 25%;
+    right: 25%;
+    padding: 0 20%;
+}
+footer a {
+    color: rgb(252, 250, 250) ;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+  footer a:hover {
+    color: red;
+    font-size: 1rem;
+    transition: font-size 1s;
+  }
+  
+  footer p {
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+  
+  footer .links-container {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: auto;
+    justify-content: space-evenly;
+  }
+  
+  footer ul {
+    list-style-type: none;
+  }
+  
+  footer li {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  footer h3 {
+    letter-spacing: 2px;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  /* MQ TABLET */
+  
+  @media (min-width: 650px) and (max-width: 992px) {
+    footer .links-container {
+      grid-template-columns: auto auto;
+    }
+  }
+  
+  /* MQ PC */
+  
+  @media (min-width: 993px) {
+    footer .links-container {
+      grid-template-columns: auto auto auto auto;
+    }
+  }

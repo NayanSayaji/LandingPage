@@ -19,6 +19,7 @@
 
         <div class="nav-links">
           <i class="fa fa-times" onclick="hideMenu()"></i>
+          
           <ul>
             <li><a href="#header"> Home</a></li>
             <li><a href="#about"> About</a></li>
@@ -31,7 +32,9 @@
       </nav>
 
       <div class="text-box">
-        <div class="logo"><strong>MH</strong>TECHIN</div>
+        <div class="logo">
+          <img src="img/logo.png" alt="" /><strong>MH</strong>TECHIN
+        </div>
 
         <p>
           Way towards Innovations An Organisation for Software, Embedded as well
@@ -43,7 +46,8 @@
       </div>
     </section>
 
-    <!-- about section -->
+
+<!-- about section -->
     <section id="about">
       <div>
         <div class="logo">
@@ -68,6 +72,8 @@
       </div>
     </section>
 
+    
+    <div class="line"></div>
     <!-- services -->
     <section class="servicesss" id="services">
       <h1>Our Services</h1>
@@ -119,6 +125,8 @@
       </div>
     </section>
 
+    <div class="line"></div>
+
     <!-- team -->
 
     <section class="team" id="team">
@@ -159,7 +167,9 @@
           <h3>Rahul Saxena</h3>
         </div>
       </div>
+      <div class="line"></div>
     </section>
+
 
     <!-- footer -->
 
@@ -168,9 +178,10 @@
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
         cupiditate quae modi ipsum iure quibusdam! alias eligendi repellendus
-        animi. <br /><br />
+        animi. <br>
         Join us for Reasearch and Development!
       </p>
+      <h2>Connect with us on Our Social Handles</h2>
       <div class="icons">
         <a href="" class="fa fa-facebook"></a>
         <i class="fa fa-twitter"></i>
@@ -184,19 +195,78 @@
           class="fa fa-google"
         ></a>
       </div>
-      <p>Made with ❤️ by Nayan Sayaji</p>
+      <a href="#contact-form" class="gotoform">Contact-Us</a>
     </section>
 
-    <!-- js for toggle menu -->
-    <script>
-      var navLinks = document.getElementById("navLinks");
 
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
+    <section class="contact" id="contact-form">
+
+      <h2>Contact-Form</h2>
+
+      <div class="content">
+
+          <div class="contact-form">
+
+              <form action="">
+                  <p>
+                      <label>FullName</label>
+                      <input type="text" name="fullname">
+                  </p>
+
+                  <p>
+                      <label>Email Adress</label>
+                      <input type="email" name="email">
+                  </p>
+
+                  <p>
+                      <label>Phone Number</label>
+                      <input type="tel" name="phone">
+                  </p>
+
+                  <p class="block">
+                      <label>Message</label>
+                      <textarea name="message" rows="3"></textarea>
+                  </p>
+                  <div class="btnsend">
+                  <p class="block">
+                      <button>SEND</button>
+                  </p>
+                </div>
+
+              </form>
+              
+            </div>
+            <br>
+            <div class="line"></div>
+      </div>
+  </section>
+
+  <footer>
+
+    <div class="links-container">
+
+        <div>
+            <p>Terms & conditions</p>
+            <ul>
+                <li><a href="#">Privacy polity</a></li>
+                <li><a href="#">Personal data</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <p>Headquarters</p>
+            <ul>
+                <li><a href="#">Chh.Sambhajinagar</a></li>
+                <li><a href="#">Badnapur</a></li>
+                <li><a href="#">Jalna</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <h3>MHTECHIN <i class="fa fa-copyright"></i> 2016</h3>
+
+</footer>
   </body>
 </html>
