@@ -347,7 +347,6 @@
      background-position: center;
      background-size: cover;
      position: relative;
-
  }
 
  .footer p {
@@ -605,7 +604,7 @@
 
  /* Foooter */
  footer {
-     background-color: rgb(46, 44, 44);
+     background-color: rgba(0, 0, 0, 0.94);
      color: rgb(255, 255, 255);
      padding-top: 40px;
  }
