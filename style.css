@@ -116,6 +116,7 @@
      letter-spacing: .15em;
      animation: typing 3.5s steps(30, end),
          blink-caret .5s step-end infinite;
+    margin-bottom: 3%;
  }
 
  /* The typing effect */
@@ -141,6 +142,7 @@
  }
 
  .know-btn {
+    
      display: inline-block;
      text-decoration: none;
      color: #fff;
